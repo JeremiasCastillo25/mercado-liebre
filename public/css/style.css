@@ -52,13 +52,44 @@ nav ul li {
     text-align: center;
 }
 
+header section h1 {
+    display: none;
+}
+
+nav ul {
+    display: none;
+}
+
 /* Main */
 
 main {
     background-color: #ebebeb;
     padding: 24px;
+    size: 90%;
+    margin: auto;
 }
 
+main section article {
+    /* no lo hace porque el h2 tiene más margen */
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+main section article div {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+main section article div .fa-truck {
+    color: #39b54a;
+}
+
+main section article div .discount {
+    color: #39b54a;
+}
+
+main section article div h4 {
+    display: none;
+}
 /* footer */
 
 footer {
@@ -74,4 +105,26 @@ footer {
 
 footer p {
     margin-bottom: 48px;
+}
+
+@media (min-width: 361px) {
+    main section article div h4 {
+        display: block;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    header section h1 {
+        display: block;
+    }
+
+    nav ul {
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
 }
