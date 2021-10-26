@@ -50,74 +50,13 @@ header section div form i {
     text-align: center;
 }
 
-nav ul {
-    display: none;
-}
-
-.burger-menu {
-    color: white;
-    background-color: #1259c3;
-    margin: auto;
-    width: 1em;
-    padding: 8px;
-    border-radius: 20%;
-    text-align: center;
-}
-
-.banner {
-    margin: 10px;
-}
 /* Main */
 
 main {
     background-color: #ebebeb;
     padding: 24px;
-    margin: 10px;
 }
 
-main section div article {
-    margin-bottom: 10px;
-    background-color: white;
-    max-width: 360px;
-}
-
-main section div article div {
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-    display: flex;
-    /* flex-wrap: nowrap; */
-    position: relative;
-}
-
-main section div article div .fa-truck {
-    color: #39b54a;
-    position: absolute;
-    right: 6%;
-    bottom: calc(100% - 16px);
-}
-
-.circle-icon {
-    border: #39b54a 1px solid;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-main section div article div p {
-    margin: 0px 20px;
-}
-
-main section div article div .price {
-    font-size: 18px;
-}
-
-main section div article div .discount {
-    color: #39b54a;
-    font-size: 16px;
-}
-
-main section div article div .description {
-    display: none;
-}
 /* footer */
 
 footer {
@@ -137,55 +76,4 @@ footer {
 footer div div {
     padding: 20px;
     margin-bottom: 48px;
-}
-
-@media (min-width: 361px) {
-    header section .logo {
-        display: block;
-        margin-left: 40px;
-        max-width: 40%;
-    }
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    nav ul {
-        display: flex;
-        flex: 1;
-        justify-content: left;
-        flex-wrap: wrap;
-    }
-
-    nav ul li {
-        list-style: none;
-        padding: 0px 20px;
-    }
-
-    nav ul li a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .burger-menu {
-        display: none;
-    }
-
-    main section div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    main section div article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-
-    main section div article div .description {
-        display: block;
-        margin: 20px;
-    }
-}
-
-@media (min-width: 769px) {
 }
