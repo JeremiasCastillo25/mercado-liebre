@@ -1,28 +1,57 @@
 /* header */
 
-h1 img {
-    display: block;
-    width: 90%;
+header section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header section .logo {
+    max-width: 150px;
+    margin-left: 30px;
+}
+
+header section div {
+    margin: 10px;
+    position: relative;
+    right: 20px;
+    width: 40%;
+}
+
+header section div form input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    color: #666;
     margin: auto;
 }
 
-.price {
-    font-size: 18px;
+header section div form i {
+    position: absolute;
+    z-index: 100;
+    right: 10px;
+    top: 10px;
+    color: #666;
 }
 
-.discount,
-.description {
-    font-size: 16px;
+.fa-search {
+    background-color: white;
+    padding: 2px;
+    /* border: black solid 1px; */
 }
 
 .icon-top {
     margin: 0px 2px;
 }
 
-.fa-search {
-    background-color: white;
-    padding: 2.4px;
-    border: black solid 1px;
+.compra-tarjeta {
+    text-align: center;
+}
+
+nav ul {
+    display: none;
 }
 
 .burger-menu {
@@ -35,59 +64,58 @@ h1 img {
     text-align: center;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: black;
+.banner {
+    margin: 10px;
 }
-
-nav ul li {
-    list-style: none;
-}
-
-#searchPrd {
-    margin-left: 10%;
-}
-
-.compra-tarjeta {
-    text-align: center;
-}
-
-header section h1 {
-    display: none;
-}
-
-nav ul {
-    display: none;
-}
-
 /* Main */
 
 main {
     background-color: #ebebeb;
     padding: 24px;
-    size: 90%;
-    margin: auto;
+    margin: 10px;
 }
 
-main section article {
-    /* no lo hace porque el h2 tiene más margen */
+main section div article {
     margin-bottom: 10px;
     background-color: white;
+    max-width: 360px;
 }
 
-main section article div {
+main section div article div {
     border-top: 1px solid #ebebeb;
     padding: 15px;
-}
-main section article div .fa-truck {
-    color: #39b54a;
-}
-
-main section article div .discount {
-    color: #39b54a;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    position: relative;
 }
 
-main section article div h4 {
+main section div article div .fa-truck {
+    color: #39b54a;
+    position: absolute;
+    right: 6%;
+    bottom: calc(100% - 16px);
+}
+
+.circle-icon {
+    border: #39b54a 1px solid;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+main section div article div p {
+    margin: 0px 20px;
+}
+
+main section div article div .price {
+    font-size: 18px;
+}
+
+main section div article div .discount {
+    color: #39b54a;
+    font-size: 16px;
+}
+
+main section div article div .description {
     display: none;
 }
 /* footer */
@@ -102,27 +130,60 @@ footer {
     margin-bottom: 10px;
     color: #1259c3;
 }
+.bottom-flex {
+    display: flex;
+}
 
-footer p {
+footer div div {
+    padding: 20px;
     margin-bottom: 48px;
 }
 
 @media (min-width: 361px) {
-    main section article div h4 {
+    header section .logo {
         display: block;
+        margin-left: 40px;
+        max-width: 40%;
     }
-    main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
-    header section h1 {
-        display: block;
+    nav {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     nav ul {
-        display: block;
+        display: flex;
+        flex: 1;
+        justify-content: left;
+        flex-wrap: wrap;
     }
+
+    nav ul li {
+        list-style: none;
+        padding: 0px 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
     .burger-menu {
         display: none;
+    }
+
+    main section div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main section div article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div article div .description {
+        display: block;
+        margin: 20px;
     }
 }
 

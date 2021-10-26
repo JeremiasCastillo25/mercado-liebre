@@ -9,6 +9,7 @@ html,
 body {
     font-family: "Roboto", sans-serif;
     background-color: #eac926;
+    width: 100%;
 }
 
 img {
