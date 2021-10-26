@@ -1,45 +1,18 @@
 /* header */
 
-header section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header section .logo {
-    max-width: 150px;
-    margin-left: 30px;
-}
-
-header section div {
-    margin: 10px;
-    position: relative;
-    right: 20px;
-    width: 40%;
-}
-
-header section div form input {
-    padding: 10px;
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    color: #666;
+h1 img {
+    display: block;
+    width: 90%;
     margin: auto;
 }
 
-header section div form i {
-    position: absolute;
-    z-index: 100;
-    right: 10px;
-    top: 10px;
-    color: #666;
+.price {
+    font-size: 18px;
 }
 
-.fa-search {
-    background-color: white;
-    padding: 2px;
-    /* border: black solid 1px; */
+.discount,
+.description {
+    font-size: 16px;
 }
 
 .icon-top {
@@ -69,11 +42,7 @@ footer {
     margin-bottom: 10px;
     color: #1259c3;
 }
-.bottom-flex {
-    display: flex;
-}
 
-footer div div {
-    padding: 20px;
+footer p {
     margin-bottom: 48px;
 }
