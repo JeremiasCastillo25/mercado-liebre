@@ -4,6 +4,11 @@ Celeste: #1259c3;
 Gris oscuro: #666;
 Gris claro: #ebebeb;
 Verde: #39b54a; */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 html,
 body {

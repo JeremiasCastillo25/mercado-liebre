@@ -1,9 +1,52 @@
 /* header */
 
-h1 img {
-    display: block;
-    width: 90%;
+header {
+    width: 90vw;
     margin: auto;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.compra-tarjeta {
+    text-align: right;
+    font-size: 12px;
+}
+
+.logo {
+    width: 50%;
+}
+
+.search {
+    width: 50%;
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+#searchPrd {
+    width: 100%;
+    padding: 5px;
+    padding-right: 4%;
+    flex-grow: 1;
+    border: none;
+    border-radius: 5px;
+}
+
+.search i {
+    padding: 6px;
+    border-left: solid 1px #ebebeb;
+    background-color: white;
+    position: absolute;
+    right: 4%;
+    z-index: 10;
 }
 
 .price {
@@ -21,10 +64,6 @@ h1 img {
 
 .icon-top {
     margin: 0px 2px;
-}
-
-.compra-tarjeta {
-    text-align: center;
 }
 
 nav {
@@ -51,14 +90,60 @@ main {
     margin: auto;
 }
 
-main section article {
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+main section h2 {
+    flex: 100%;
+}
+
+.wrapper {
+    flex: 100%;
     margin: 10px 0px;
-    background-color: white;
+}
+
+.wrapper article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .article-box {
+    background-color: white;
     border-top: 1px solid #ebebeb;
     padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+}
+
+.article-box i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.price {
+    min-width: 30%;
+    margin-bottom: 10px;
+}
+
+.discount {
+    color: #39b54a;
+    width: 70%;
+    margin-bottom: 10px;
 }
 
 /* footer */
@@ -78,19 +163,77 @@ footer p {
     margin-bottom: 48px;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 481px) {
     .description {
         display: block;
     }
     article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    nav {
-        display: block;
+
+    .logo {
+        width: 33%;
     }
+    .search {
+        width: 33%;
+    }
+
+    .compra-tarjeta {
+        width: 33%;
+    }
+
+    .wrapper {
+        flex: 50%;
+        padding: 7px;
+    }
+
+    .main-nav-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-nav-bar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-nav-left {
+        justify-content: left;
+    }
+
+    .main-nav-right {
+        justify-content: right;
+    }
+
+    .main-nav-bar li {
+        margin: 10px;
+        list-style: none;
+    }
+
+    .main-nav-bar a {
+        text-decoration: none;
+        color: #222;
+    }
+
     .burger-menu {
         display: none;
     }
 }
 @media (min-width: 769px) {
+    .wrapper {
+        flex: 25%;
+    }
+    .compra-tarjeta {
+        font-size: 16px;
+        max-width: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header,
+    .banner,
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
 }
