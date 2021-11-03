@@ -25,15 +25,13 @@
     <body>
         <header class="header">
             <section class="header-top">
-                <!-- <h1>  tira error en Mozilla-->
-                <!-- <a href="#"> -->
-                <img
-                    class="logo"
-                    src="/images/logo-mercado-liebre.svg"
-                    alt="logo de Mercado Liebre"
-                />
-                <!-- </a> -->
-                <!-- </h1> -->
+                <a href="./">
+                    <img
+                        class="logo"
+                        src="/images/logo-mercado-liebre.svg"
+                        alt="logo de Mercado Liebre"
+                    />
+                </a>
 
                 <div class="search">
                     <input
@@ -87,85 +85,110 @@
         <section class="banner"></section>
         <main>
             <form action="/crear-producto" method="post" class="create-form">
-                <div class="control-formulario">
-                    <label for="nombre">Nombre del producto</label>
-                    <input
-                        type="text"
-                        name="nombre"
-                        id="nombre"
-                        class="control"
-                    />
+                <div class="form-field">
+                    <div class="data">
+                        <input
+                            type="text"
+                            name="nombre"
+                            id="nombre"
+                            class="control"
+                        />
+                        <label class="required-label" for="nombre"
+                            >Nombre del producto</label
+                        >
+                    </div>
                 </div>
-                <div class="control-formulario">
-                    <label for="precio">Precio</label>
-                    <input
-                        type="number"
-                        name="precio"
-                        id="precio"
-                        class="control"
-                    />
+                <div class="form-field">
+                    <div class="data">
+                        <input
+                            type="number"
+                            name="precio"
+                            id="precio"
+                            class="control"
+                        />
+                        <label class="required-label" for="precio"
+                            >Precio</label
+                        >
+                    </div>
                 </div>
-                <div class="control-formulario">
-                    <label>Categoría</label>
-                    <select name="categoria" class="control">
-                        <option value="hogar">Hogar</option>
-                        <option value="electro">Electro</option>
-                        <option value="indumentaria">Indumentaria</option>
-                    </select>
+                <div class="form-field">
+                    <div class="data-checkbox">
+                        <label class="label-tag">Categoría</label>
+                        <select name="categoria" class="control">
+                            <option value="hogar">Hogar</option>
+                            <option value="electro">Electro</option>
+                            <option value="indumentaria">Indumentaria</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="control-formulario">
-                    <label>Ciudad:</label>
-                    <select name="ciudad" class="control">
-                        <option value="ba">Buenos Aires</option>
-                        <option value="ro">Rosario</option>
-                        <option value="me">Mendoza</option>
-                    </select>
+                <div class="form-field">
+                    <div class="data-checkbox">
+                        <label class="label-tag">Ciudad:</label>
+                        <select name="ciudad" class="control">
+                            <option value="ba">Buenos Aires</option>
+                            <option value="ro">Rosario</option>
+                            <option value="me">Mendoza</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="control-formulario">
-                    <label for="oferta">Está en oferta</label>
-                    <input type="radio" name="oferta" id="oferta" />
+                <div class="form-field">
+                    <div class="data">
+                        <label for="oferta">Está en oferta</label>
+                        <input type="checkbox" name="oferta" id="oferta" />
+                        <label for="oferta">Si</label>
+                    </div>
                 </div>
-                <div class="control-formulario">
-                    <label for="description">Descripción</label>
-                    <textarea
-                        name="description"
-                        id="description"
-                        cols="30"
-                        rows="10"
-                        class="control"
-                    ></textarea>
+                <div class="form-field">
+                    <div class="data">
+                        <textarea
+                            name="description"
+                            id="description"
+                            cols="30"
+                            rows="10"
+                            class="control"
+                        ></textarea>
+                        <label for="description">Descripción</label>
+                    </div>
                 </div>
 
-                <div class="control-formulario">
-                    <button type="reset" class="boton-formulario">
-                        Borrar
-                    </button>
-                    <button type="submit" class="boton-formulario">
-                        Guardar
-                    </button>
+                <div class="button-wrapper">
+                    <button type="submit">Guardar</button>
+                    <button type="reset">Borrar</button>
                 </div>
             </form>
         </main>
         <footer>
-            <i class="icon-bottom fas fa-credit-card"></i>
-            <h3>Pagá con tarjeta o en efectivo</h3>
-            <p>
-                Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
-                efectivo en puntos de pago. ¡Y siempre es seguro!
-            </p>
-            <i class="icon-bottom fas fa-gift"></i>
-            <h3>Envío gratis desde $ 2.500</h3>
-            <p>
-                Solo por estar registrad@ en Mercado Liebre tenés envíos gratis
-                en miles de productos. Es un beneficio de Mercado Puntos.
-            </p>
-            <i class="icon-bottom fas fa-user-shield"></i>
-            <h3>Seguridad, de principio a fin</h3>
-            <p>
-                ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
-                puedas hacer, porque estás siempre protegid@.
-            </p>
-            <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            <section>
+                <div>
+                    <i class="icon-bottom fas fa-credit-card"></i>
+                    <h3>Pagá con tarjeta o en efectivo</h3>
+                    <p>
+                        Con Mercado Liebre Cash, tenés cuotas sin interés con
+                        tarjeta o efectivo en puntos de pago. ¡Y siempre es
+                        seguro!
+                    </p>
+                </div>
+                <div>
+                    <i class="icon-bottom fas fa-gift"></i>
+                    <h3>Envío gratis desde $ 2.500</h3>
+                    <p>
+                        Solo por estar registrad@ en Mercado Liebre tenés envíos
+                        gratis en miles de productos. Es un beneficio de Mercado
+                        Puntos.
+                    </p>
+                </div>
+                <div>
+                    <i class="icon-bottom fas fa-user-shield"></i>
+                    <h3>Seguridad, de principio a fin</h3>
+                    <p>
+                        ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada
+                        que no puedas hacer, porque estás siempre protegid@.
+                    </p>
+                </div>
+                <div>
+                    <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+                </div>
+            </section>
         </footer>
     </body>
 </html>

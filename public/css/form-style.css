@@ -185,6 +185,10 @@ button {
     border-radius: 8px;
 }
 
+button[type="submit"]:hover {
+    background-color: #0022aa;
+}
+
 button[type="reset"] {
     font-size: 1em;
 }
@@ -207,8 +211,5 @@ button[type="reset"] {
         width: max-content;
         padding-left: 10px;
         padding-right: 10px;
-    }
-    .create-form {
-        /* margin-left: 15%; */
     }
 }
