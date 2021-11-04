@@ -55,11 +55,6 @@ input:focus:invalid + .required-label::after {
     color: #8a0000;
 }
 
-/* input:empty + .required-label::after {
-    content: "\f359";
-    color: #eac926;
-} */
-
 .data {
     width: 100%;
     position: relative;
@@ -72,7 +67,6 @@ input:focus:invalid + .required-label::after {
     background-color: white;
     padding: 0px 2px;
     top: 0;
-    /* display: flex; */
 }
 
 .label-tag {
@@ -131,7 +125,6 @@ input[type="checkbox"] {
     color: white;
     height: 3em;
     border-radius: 5px;
-    /* border: rgb(189, 6, 6) dashed 1px; */
 }
 
 .user-profile-validation {

@@ -3,42 +3,31 @@
 main {
     background-color: #ebebeb;
     padding: 24px;
-    /* width: 90vw; */
     margin: auto;
 }
 
 main section {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
 }
 
 main section h2 {
-    flex: 100%;
+    width: 100%;
+    padding: 30px 7px 10px;
 }
 
-.wrapper {
-    flex: 100%;
-    margin: 10px 0px;
+article {
+    margin: 7px;
 }
 
-.wrapper article {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.article-box {
+.information-box {
     background-color: white;
     border-top: 1px solid #ebebeb;
     padding: 15px;
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    height: inherit;
 }
 
-.article-box i {
+.information-box i {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -53,18 +42,17 @@ main section h2 {
     top: -15px;
 }
 
-/* INLINE BLOCK */
-
+.cost {
+    width: 100%;
+    display: flex;
+}
 .price {
-    display: inline-block;
-    min-width: 30%;
-    padding-right: 10px;
+    padding-right: 7px;
     margin-bottom: 10px;
 }
 
 .discount {
-    padding-right: 10px;
-    width: 40%;
+    width: calc(100% - 7px);
     color: #39b54a;
 }
 
@@ -73,32 +61,37 @@ main section h2 {
         display: block;
     }
 
-    .wrapper {
-        flex: 50%;
-        padding: 7px;
+    main section article {
+        /* width calculada sacando el margin del article */
+        width: calc(50% - 14px);
     }
 }
 
 @media (min-width: 769px) {
+    .information-box {
+        height: 6em;
+    }
     .description {
-        visibility: hidden;
+        opacity: 0;
     }
 
-    .wrapper:hover .description {
-        visibility: visible;
+    article:hover .description {
+        transition: opacity 2s;
+        opacity: 1;
     }
-    .wrapper:hover article {
+
+    article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    .article-box i:hover {
+    .information-box i:hover {
         transform: rotate(-90deg);
     }
-    .article-box i:hover {
+    .information-box i:hover {
         transition: transform 500ms;
     }
 
-    .wrapper {
-        flex: 25%;
+    main section article {
+        width: calc(25% - 14px);
     }
 }

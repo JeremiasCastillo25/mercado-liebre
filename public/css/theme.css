@@ -50,7 +50,6 @@ header {
 
 .logo {
     padding-right: 5%;
-    /* width: 50%; */
     width: 100%;
     margin-bottom: 30px;
 }
@@ -61,8 +60,6 @@ header {
 
 .search {
     width: 50%;
-    /* display: flex; */
-    /* justify-content: center; */
     padding: 2px;
     position: relative;
     overflow: hidden;
@@ -79,7 +76,7 @@ header {
 }
 
 .search i {
-    margin: 6px;
+    padding: 6px;
     border-left: solid 1px #ebebeb;
     background-color: white;
     position: absolute;
@@ -155,9 +152,7 @@ footer section div {
     .header-top a {
         width: 33%;
     }
-    /* .logo {
-        width: 33%;
-    } */
+
     .search {
         width: 33%;
     }
@@ -214,8 +209,12 @@ footer section div {
         margin: auto;
     }
 
+    .icon-bottom {
+        transition: color 500ms;
+    }
+
     .icon-bottom:hover {
-        color: #39b54a;
+        color: #eac926;
     }
 }
 

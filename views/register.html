@@ -92,7 +92,7 @@
                             type="text"
                             name="name"
                             required
-                            pattern="[\w]+"
+                            pattern="[\w\s]+"
                         />
                         <label class="required-label" for="name"
                             >Nombre y apellido</label
@@ -107,13 +107,22 @@
                 </div>
                 <div class="form-field">
                     <div class="data">
-                        <input id="user" type="text" name="user" required />
+                        <input
+                            id="user"
+                            type="text"
+                            name="user"
+                            required
+                            pattern="[\w]+"
+                        />
                         <label class="required-label" for="user"
                             >Nombre de usuario</label
                         >
                     </div>
                     <div class="validation">
-                        <span>debe contener sólo caracteres alfanuméricos</span>
+                        <span
+                            >debe contener sólo caracteres alfanuméricos sin
+                            espacios</span
+                        >
                     </div>
                 </div>
 
