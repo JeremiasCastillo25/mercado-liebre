@@ -76,7 +76,8 @@ header {
 }
 
 .search i {
-    padding: 6px;
+    margin: 6px 0px;
+    padding: 0px 6px;
     border-left: solid 1px #ebebeb;
     background-color: white;
     position: absolute;
